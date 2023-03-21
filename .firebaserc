@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "whatever-firebase"
+  },
+  "targets": {
+    "whatever-firebase": {
+      "hosting": {
+        "app": [
+          "whatever-firebase"
+        ]
+      }
+    }
   }
 }

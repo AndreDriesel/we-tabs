@@ -159,6 +159,16 @@
               "browserTarget": "app:build:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "app:build:production",
+            "firebaseProject": "whatever-firebase",
+            "firebaseHostingSite": "whatever-firebase"
+          }
         }
       }
     }
