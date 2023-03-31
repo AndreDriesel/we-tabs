@@ -1,0 +1,223 @@
+<ion-header [translucent]="true" *ngIf="!searching" #header class="header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button color="red"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Anlässe</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="red" (click)="goToGroupCreate()">
+        neuer Anlass
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" *ngIf="!searching" #header>
+    <ion-toolbar>
+      <ion-title size="large">Anlässe</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-spinner *ngIf="showSpinner"></ion-spinner>
+
+  <ion-searchbar
+    #searchbar
+    (ionChange)="searchbarFilter($event)"
+    [showCancelButton]="searching ? 'always' : 'focus'"
+    cancelButtonText="Abbrechen"
+    placeholder="Suchen"
+    (ionFocus)="searchOn()"
+    (ionCancel)="searchOff()"
+    (ionBlur)="searchOff()"
+    (ionChange)="searchbarFilter($event)"
+    debounce="250"
+    animated="true"
+    autocorrect="on"
+    autocomplete="on"
+    class="maxwidth500"
+  ></ion-searchbar>
+
+  <div
+    style="display: flex; justify-content: flex-end"
+    class="maxwidth500"
+    *ngIf="filteredInvites && filteredInvites.length > 0"
+  >
+    <ion-text color="red" style="margin-right: 25px; font-size: 15px"
+      >Einladungen ({{ filteredInvites.length || 0 }})
+    </ion-text>
+  </div>
+
+  <div
+    *ngIf="!showSpinner && (!groupList || groupList.length < 1 )"
+    class="no-items-text"
+  >
+    <ion-text>Du hast noch keinen Anlass erstellt.</ion-text>
+  </div>
+
+  <!--<ion-list lines="none" class="maxwidth500">
+    <ion-item-sliding *ngFor="let group of filteredInvites; index as i" class="sliding-enabled">
+      <ion-item *ngIf="group" (click)="goToGroup(group)">
+        <ion-avatar *ngIf="group.presenteeData" class="profil-avatar" slot="start">
+          <ion-img [src]="group.presenteeData ? group.presenteeData.photoURL : '../../../assets/imgs/people.svg'">
+          </ion-img>
+        </ion-avatar>
+        <ion-avatar *ngIf="group.avatar" class="profil-avatar" slot="start">
+          <ion-img [src]="group.avatar ? group.avatar : '../../../assets/imgs/people.svg'"></ion-img>
+        </ion-avatar>
+        <ion-label>
+          <h3>{{ group.presenteeData?.name || group.presentee.name }}</h3>
+          <h2>{{ group.name || '' }}</h2>
+          <p no-lines><span>{{ group?.occasionDate | date:'dd.MM.yyyy' }}</span></p>
+        </ion-label>
+        <ion-badge color="light">
+          <span *ngIf="group.daysleft > 1">{{ group.daysleft }} Tage</span>
+          <span *ngIf="group.daysleft === 1">morgen</span>
+          <span *ngIf="group.daysleft === 0">heute</span>
+          <span *ngIf="group.daysleft === -1">gestern</span>
+          <span *ngIf="group.daysleft < -1">vor {{ group.daysleft * -1 }} Tage</span>
+        </ion-badge>
+        <ion-button slot="end" (click)="acceptInvitation(invite.id)" color="success">
+          <ion-icon slot="icon-only" name="checkmark"></ion-icon>
+        </ion-button>
+        <ion-button slot="end" (click)="refuseInvitation(invite.id)" color="danger">
+          <ion-icon slot="icon-only" name="close"></ion-icon>
+        </ion-button>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option color="primary" (click)="logGroup(group)">
+          <ion-icon name="options-outline"></ion-icon>More
+        </ion-item-option>
+        <ion-item-option color="danger" (click)="deleteGroup(group)" expandable>
+          <ion-icon name="trash-outline"></ion-icon>Delete
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>-->
+
+  <ion-list lines="none" class="maxwidth500">
+    <ion-item-sliding
+      *ngFor="let group of filteredGroups; index as i; trackBy: trackById"
+      class="sliding-enabled"
+    >
+      <ion-item *ngIf="group" (click)="goToGroup(group)" detail>
+        <ion-avatar class="profil-avatar" slot="start">
+          <ion-img
+            [src]="group.avatar ? group.avatar : '../../../assets/imgs/people.svg'"
+          ></ion-img>
+        </ion-avatar>
+        <ion-label>
+          <h3>{{ group.presenteeData?.name || group.presentee?.name }}</h3>
+          <h2>{{ group?.name || '' }}</h2>
+          <p no-lines>
+            <span>{{ group?.occasionDate | date:'dd.MM.yyyy' }}</span>
+          </p>
+        </ion-label>
+        <ion-badge color="light" *ngIf="group.daysleft">
+          <span *ngIf="group.daysleft > 1">{{ group.daysleft }} Tage</span>
+          <span *ngIf="group.daysleft === 1">morgen</span>
+          <span *ngIf="group.daysleft === 0">heute</span>
+          <span *ngIf="group.daysleft === -1">gestern</span>
+          <span *ngIf="group.daysleft < -1"
+            >vor {{ group.daysleft * -1 }} Tage</span
+          >
+        </ion-badge>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="white" (click)="deleteAlert(group.id)">
+          <ion-icon
+            name="trash"
+            slot="icon-only"
+            color="danger"
+            expandable
+          ></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <!--<ion-list lines="none" class="maxwidth500">
+    <ion-item-sliding *ngFor="let number of [0,1,2,3,4,5,6,7,8]" class="sliding-enabled">
+      <ion-item detail>
+        <ion-avatar class="profil-avatar" slot="start">
+          <img src="../../../assets/imgs/people.svg">
+        </ion-avatar>
+        <ion-label>
+          <h3>
+            <ion-skeleton-text></ion-skeleton-text>
+          </h3>
+          <h2>
+            <ion-skeleton-text></ion-skeleton-text>
+          </h2>
+          <p no-lines><span>01.01.2030</span></p>
+        </ion-label>
+        <ion-badge color="light">
+          <span>morgen</span>
+        </ion-badge>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option color="primary">
+          <ion-icon name="options-outline"></ion-icon>More
+        </ion-item-option>
+        <ion-item-option color="danger" expandable>
+          <ion-icon name="trash-outline"></ion-icon>Delete
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>-->
+
+  <!--<ion-fab vertical="bottom" horizontal="end" slot="fixed" mini>
+    <ion-fab-button color="we-red-conv" routerLink="/groups/create">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>-->
+
+  <!--<ion-list lines="none" *ngIf="hasInvites">
+    <ion-item *ngFor="let invite of filteredInvites">
+      <ion-avatar slot="start">
+        <img [src]="invite.presenteeData ? invite.presenteeData.photoURL : '../../../assets/imgs/people.svg'">
+      </ion-avatar>
+      <ion-label>
+        <h3 *ngIf="invite.presenteeData">{{ invite.presenteeData.name.formatted }}</h3>
+        <h3 *ngIf="!invite.presenteeData">{{ invite.presentee.name }}</h3>
+        <h2>{{ invite.name || '' }}</h2>
+        <p no-lines *ngIf="invite.createdAt"><span>{{ invite?.createdAt.toDate() | date:'EEEE, dd.MM.yyyy, HH:mm' }}</span></p>
+      </ion-label>
+      <ion-button slot="end" (click)="acceptInvitation(invite.id)" color="success">
+        <ion-icon slot="icon-only" name="checkmark"></ion-icon>
+      </ion-button>
+      <ion-button slot="end" (click)="refuseInvitation(invite.id)" color="danger">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list> -->
+
+  <!--
+  <ion-list lines="none" *ngIf="hasGroups">
+    <ion-item-sliding *ngFor="let group of filteredGroups" class="sliding-enabled">
+      <ion-item (click)="goToGroup(group)">
+        <ion-avatar slot="start">
+            <img [src]="group.presenteeData ? group.presenteeData.photoURL : '../../../assets/imgs/people.svg'">
+        </ion-avatar>
+        <ion-label>
+          <h3 *ngIf="group.presenteeData">{{ group.presenteeData.name.formatted }}</h3>
+          <h3 *ngIf="!group.presenteeData">{{ group.presentee.name }}</h3>
+          <h2>{{ group.name || '' }}</h2>
+          <p no-lines *ngIf="group.createdAt"><span>{{ group?.createdAt.toDate() | date:'EEEE, dd.MM.yyyy, HH:mm' }}</span></p>
+        </ion-label>
+        <ion-note>
+          {{group?.createdAt.toDate() | date: 'short'}}
+        </ion-note>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option color="primary" (click)="logGroup(group)">
+          <ion-icon name="options-outline"></ion-icon>More
+        </ion-item-option>
+        <ion-item-option color="danger" (click)="deleteGroup(group)" expandable>
+          <ion-icon name="trash-outline"></ion-icon>Delete
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list> -->
+</ion-content>

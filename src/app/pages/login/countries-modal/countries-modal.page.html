@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Landesvorwahl</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-searchbar (ionInput)="search($event)" debounce="500" placeholder="Name oder Nummer suchen"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-spinner *ngIf="showSpinner"></ion-spinner>
+
+  <ng-container *ngIf="localCountry">
+    <ion-item-divider>
+      <ion-label>
+        dein Standort
+      </ion-label>
+    </ion-item-divider>
+    <ion-item button (click)="close(localCountry)" lines="none">
+      <ion-label>
+        <h4>{{ localCountry.nativeName }} ({{ localCountry.name }})</h4>
+      </ion-label>
+      <ion-note slot="end">+ {{ localCountry.code }}</ion-note>
+    </ion-item>
+  </ng-container>
+
+  <ion-item-divider>
+    <ion-label>
+      alle Länder
+    </ion-label>
+  </ion-item-divider>
+  
+  <ion-list>
+    <ng-container *ngFor="let country of listData">
+      <ion-item button (click)="close(country)">
+        <ion-label>
+          <h4>{{country.name}} ({{country.nativeName}})</h4>
+        </ion-label>
+        <ion-note slot="end">+ {{country.code}}</ion-note>
+      </ion-item>
+    </ng-container>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <!--<ion-list>
+      <ng-container *ngFor="let country of listData">
+        <ion-item button (click)="close(country.code)">
+          <ion-avatar slot="start">
+            <img [src]="'/assets/flags/1x1/' + country.alphaCode + '.svg'">
+          </ion-avatar>
+          <ion-label>
+            <h4>{{country.name}} ({{country.nativeName}})</h4>
+            <p>+ {{country.code}}</p>
+          </ion-label>
+        </ion-item>
+      </ng-container>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content loadingSpinner="bubbles">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>-->
+
+</ion-content>

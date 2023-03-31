@@ -1,0 +1,80 @@
+:host {
+  ion-content {
+    //--background: url(/assets/imgs/background.jpg) no-repeat center center / cover;
+    background-size: cover;
+    color: var(--ion-color-primary-contrast);
+    z-index: 9999;
+    --background: transparent;
+  }
+  .background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    // background: url('https://images.pexels.com/photos/1303088/pexels-photo-1303088.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=426&w=640') no-repeat center center / cover;
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),url("https://images.pexels.com/photos/264787/pexels-photo-264787.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat center center / cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    transform: scale(1.1);
+  }
+  .logo {
+    text-align: center;
+    margin-top: 12%;
+    padding: 16px;
+
+    img {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+    }
+  }
+
+  .sub-titles {
+    h5, p {
+      color: var(--ion-color-primary-contrast);
+      text-shadow: 2px 2px 12px #000000;
+    }
+
+    h5 {
+      opacity: .9;
+      font-size: 18px;
+    }
+
+    p {
+      opacity: .7;
+      font-size: 12px;
+      font-weight: 100;
+    }
+  }
+
+  ion-list {
+    border-radius: 10px;
+    // border: 2px solid white;
+    background: transparent;
+    margin-top: 50px;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.6);
+    ion-item {
+      // --background: transparent;
+      // color: white;
+      --background: rgba(255, 255, 255, 0.4);
+    }
+    ion-label {
+      width: 10%;
+      // color: white;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 1.2em;
+    }
+    ion-input {
+      input {
+        color: black;
+      }
+    }
+  }
+}

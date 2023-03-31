@@ -1,0 +1,411 @@
+<div class="background">
+  <div class="background-rows">
+    <div #divrow1 class="background-row left-row">
+      <div *ngFor="let image of row1" class="background-card">
+        <img class="background-row-img" [src]="image.urls.small" />
+      </div>
+    </div>
+    <div #divrow2 class="background-row middle-row">
+      <div *ngFor="let image of row2" class="background-card">
+        <img class="background-row-img" [src]="image.urls.small" />
+      </div>
+    </div>
+    <div #divrow3 class="background-row right-row">
+      <div *ngFor="let image of row3" class="background-card">
+        <img class="background-row-img" [src]="image.urls.small" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<ion-content padding>
+  <ion-grid>
+    <!--<ion-row class="ion-align-items-end first-row">
+      <div>
+        <img class="logo" src="assets/imgs/whatever_icon.png">
+      </div>
+    </ion-row>-->
+
+    <ion-row size="12" class="ion-align-items-center middle-row">
+      <ion-col size="12" class="ion-text-center">
+        <img class="logo" src="assets/imgs/whatever_icon.png" />
+        <!-- color: #FF9800 #442500 font: aladin -->
+      </ion-col>
+      <ion-col *ngIf="site==='home'" [@slide-in-right]>
+        <h1 text-center class="welcome">Willkommen bei Whatever!</h1>
+        <ion-button
+          class="home-button"
+          expand="block"
+          shape="round"
+          color="orange"
+          (click)="setSite('login')"
+        >
+          Anmelden</ion-button
+        >
+        <ion-button
+          class="home-button"
+          expand="block"
+          shape="round"
+          color="white"
+          (click)="setSite('signup')"
+        >
+          Registrieren</ion-button
+        >
+        <!-- <ion-button class="home-button" expand="block" shape="round" color="white"
+          (click)="toggleVis()">toogle</ion-button>-->
+      </ion-col>
+
+      <ion-col *ngIf="site==='login'" [@slide-in-right] class="ion-text-center">
+        <div class="flex-centered">
+          <h5 color="light" text-center class="number-question">Anmelden</h5>
+        </div>
+        <ion-button
+          class="home-button"
+          expand="block"
+          shape="round"
+          (click)="setSite('email-login')"
+          color="white"
+        >
+          <ion-icon
+            slot="start"
+            class="social-icon"
+            name="mail-outline"
+          ></ion-icon>
+          E-Mail
+        </ion-button>
+        <div class="or-div">
+          <div class="outer-div"></div>
+          <div class="inner-div">oder</div>
+          <div class="outer-div"></div>
+        </div>
+        <ion-button
+          class="home-button"
+          expand="block"
+          shape="round"
+          (click)="googleSignIn()"
+          color="google"
+        >
+          <ion-icon
+            slot="start"
+            class="social-icon"
+            name="logo-google"
+          ></ion-icon>
+          Google
+        </ion-button>
+        <div style="color: white; margin: 2vh">
+          <span>Du hast kein Konto? </span>
+          <span
+            ><a (click)="setSite('signup')" style="color: orange"
+              >Registrieren</a
+            ></span
+          >
+        </div>
+        <!--<ion-button class="home-button" expand="block" shape="round" (click)="slideNext()" color="apple" disabled="true">
+          <ion-icon slot="start" class="social-icon" name="logo-apple"></ion-icon>
+          Apple
+        </ion-button>
+        <ion-button class="home-button" expand="block" shape="round" (click)="slideNext()" color="facebook" disabled="true">
+          <ion-icon slot="start" class="social-icon" name="logo-facebook"></ion-icon>
+          Facebook
+        </ion-button>
+        <ion-button class="home-button" expand="block" shape="round" (click)="slideNext()" color="white" disabled="true">
+          <ion-icon slot="start" class="social-icon" name="logo-windows"></ion-icon>
+          Microsoft
+        </ion-button>
+        <ion-button class="home-button" color="light" shape="round" size="small" (click)="setSite('home')">
+          <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+        </ion-button>-->
+      </ion-col>
+
+      <ion-col
+        *ngIf="site==='signup'"
+        [@slide-in-right]
+        class="ion-text-center"
+      >
+        <div class="flex-centered">
+          <h5 color="light" text-center class="number-question">
+            Registrieren
+          </h5>
+        </div>
+        <ion-button
+          class="home-button"
+          expand="block"
+          shape="round"
+          (click)="setSite('email-signup')"
+          color="white"
+        >
+          <ion-icon
+            slot="start"
+            class="social-icon"
+            name="mail-outline"
+          ></ion-icon>
+          E-Mail
+        </ion-button>
+        <div class="or-div">
+          <div class="outer-div"></div>
+          <div class="inner-div">oder</div>
+          <div class="outer-div"></div>
+        </div>
+        <ion-button
+          class="home-button"
+          expand="block"
+          shape="round"
+          (click)="googleSignIn()"
+          color="google"
+        >
+          <ion-icon
+            slot="start"
+            class="social-icon"
+            name="logo-google"
+          ></ion-icon>
+          Google
+        </ion-button>
+        <!--<ion-button class="home-button" expand="block" shape="round" (click)="slideNext()" color="apple" disabled="true">
+          <ion-icon slot="start" class="social-icon" name="logo-apple"></ion-icon>
+          Apple
+        </ion-button>
+        <ion-button class="home-button" expand="block" shape="round" (click)="slideNext()" color="facebook" disabled="true">
+          <ion-icon slot="start" class="social-icon" name="logo-facebook"></ion-icon>
+          Facebook
+        </ion-button>
+        <ion-button class="home-button" expand="block" shape="round" (click)="slideNext()" color="white" disabled="true">
+          <ion-icon slot="start" class="social-icon" name="logo-windows"></ion-icon>
+          Microsoft
+        </ion-button>
+        <ion-button class="home-button" color="light" shape="round" size="small" (click)="setSite('home')">
+          <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+        </ion-button>-->
+        <div style="color: white; margin: 2vh">
+          <span>Du hast ein Konto? </span>
+          <span
+            ><a (click)="setSite('login')" style="color: orange"
+              >Anmelden</a
+            ></span
+          >
+        </div>
+      </ion-col>
+
+      <ion-col
+        *ngIf="site==='email-signup'"
+        [@slide-in-right]
+        class="ion-text-center"
+      >
+        <div class="flex-centered">
+          <h5 color="light" text-center class="number-question">
+            Registrierung via E-Mail
+          </h5>
+        </div>
+        <form
+          class="form"
+          [formGroup]="emailSignUpForm"
+          (ngSubmit)="signUpWithEmail(emailSignUpForm.value)"
+        >
+          <ion-item class="input-item">
+            <ion-input
+              type="text"
+              id="email"
+              formControlName="email"
+              placeholder="E-Mail"
+            ></ion-input>
+          </ion-item>
+          <ng-container *ngFor="let validation of validationMessages.email">
+            <div
+              class="error-message"
+              *ngIf="emailSignUpForm.get('email')?.hasError(validation.type) && (emailSignUpForm.get('email')?.dirty || emailSignUpForm.get('email')?.touched)"
+            >
+              {{ validation.message }}
+            </div>
+          </ng-container>
+          <ion-item class="input-item">
+            <ion-input
+              type="password"
+              formControlName="password"
+              placeholder="Passwort"
+              required
+            >
+            </ion-input>
+          </ion-item>
+          <ng-container *ngFor="let validation of validationMessages.password">
+            <div
+              class="error-message"
+              *ngIf="emailSignUpForm.get('password')?.hasError(validation.type) && (emailSignUpForm.get('password')?.dirty || emailSignUpForm.get('password')?.touched)"
+            >
+              {{ validation.message }}
+            </div>
+          </ng-container>
+          <ion-item class="input-item">
+            <ion-input
+              type="password"
+              formControlName="confirm_password"
+              placeholder="Passwort wiederholen"
+              required
+            >
+            </ion-input>
+          </ion-item>
+          <ng-container>
+            <div class="error-message" *ngIf="confirmedPasswordError">
+              {{ confirmedPasswordError }}
+            </div>
+          </ng-container>
+          <ion-button
+            class="home-button"
+            expand="block"
+            shape="round"
+            id="sign-in-button"
+            color="orange"
+            [disabled]="!emailSignUpForm.valid"
+            type="submit"
+          >
+            Registrieren</ion-button
+          >
+          <!--<ion-button class="home-button" (click)="setSite('signup')" color="light" shape="round" size="small">
+            <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+          </ion-button>-->
+          <label class="error-message">{{errorMessage}}</label>
+          <label class="success-message">{{successMessage}}</label>
+        </form>
+        <!--<ion-text color="white">
+          <p>Sie sind bereits registriert?</p>
+          <p><a (click)="setSite('login')">Zur Anmeldung.</a></p>
+        </ion-text>-->
+        <ion-text (click)="setSite('signup')" color="white">zurück</ion-text>
+        <div style="color: white; margin: 2vh">
+          <span>Du hast ein Konto? </span>
+          <span
+            ><a (click)="setSite('login')" style="color: orange"
+              >Anmelden</a
+            ></span
+          >
+        </div>
+      </ion-col>
+
+      <ion-col
+        *ngIf="site==='email-login'"
+        [@slide-in-right]
+        class="ion-text-center"
+      >
+        <div class="flex-centered">
+          <h5 color="light" text-center class="number-question">
+            Anmeldung via E-Mail
+          </h5>
+        </div>
+        <form
+          class="form"
+          [formGroup]="emailSignInForm"
+          (ngSubmit)="signInWithEmail(emailSignInForm.value)"
+        >
+          <ion-item class="input-item">
+            <ion-input
+              type="text"
+              formControlName="email"
+              placeholder="E-Mail"
+            ></ion-input>
+          </ion-item>
+          <ng-container
+            *ngIf="emailSignInForm.get('email')?.touched && emailSignInForm.get('email')?.errors"
+          >
+            <ion-label
+              color="danger"
+              *ngIf="emailSignInForm.get('email')?.errors?.required"
+            >
+              E-Mail-Adresse erforderlich</ion-label
+            >
+            <ion-label
+              color="danger"
+              *ngIf="emailSignInForm.get('email')?.errors?.pattern"
+            >
+              keine gültige E-Mail-Adresse</ion-label
+            >
+          </ng-container>
+          <ion-item class="input-item">
+            <ion-input
+              type="password"
+              formControlName="password"
+              placeholder="Passwort"
+              required
+            >
+            </ion-input>
+          </ion-item>
+          <ng-container
+            *ngIf="emailSignInForm.get('password')?.touched && emailSignInForm.get('password')?.errors"
+          >
+            <ion-label
+              color="danger"
+              *ngIf="emailSignInForm.get('password')?.errors?.required"
+            >
+              Passwort erforderlich</ion-label
+            >
+            <ion-label
+              color="danger"
+              *ngIf="emailSignInForm.get('password')?.errors?.minlength"
+            >
+              Passwort zu kurz</ion-label
+            >
+          </ng-container>
+          <ion-button
+            class="home-button"
+            expand="block"
+            expand="block"
+            shape="round"
+            id="sign-in-button"
+            color="orange"
+            type="submit"
+            [disabled]="!emailSignInForm.valid"
+          >
+            <!-- [disabled]="!emailSignInForm.valid" -->
+            Anmelden
+          </ion-button>
+          <!--<ion-button (click)="setSite('login')" color="light" shape="round" size="small">
+            <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+          </ion-button>-->
+          <label class="error-message">{{errorMessage}}</label>
+          <label class="success-message">{{successMessage}}</label>
+        </form>
+        <ion-text (click)="setSite('login')" color="white">zurück</ion-text>
+        <div style="color: white; margin: 2vh">
+          <span>Du hast kein Konto? </span>
+          <span
+            ><a (click)="setSite('signup')" style="color: orange"
+              >Registrieren</a
+            ></span
+          >
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!--<ion-row style="opacity: 0;" [ngClass]="{'slide-in-right':visible, 'slide-out-left':!visible}">
+      <ion-item>
+        <ion-label>slide-in-right / out-left</ion-label>
+      </ion-item>
+    </ion-row>
+
+    <ion-row *ngIf="visible" [@slide-rin-lout]>
+      <ion-item>
+        <ion-label>slide-in-right</ion-label>
+      </ion-item>
+    </ion-row>
+
+    <ion-row class="ion-align-items-end">
+      <div class="footer-text">
+        <p>Durch eine Registierung stimmten Sie unseren <strong (click)="agbModal('AGB')">Allgemeinen
+            Geschäftsbedingungen</strong> und unserer <strong (click)="agbModal('DS')">Datenschutzerklärung </strong>zu.
+        </p>
+        <p>By clicking "Next" you agree to our <strong>Terms of Use</strong> and <strong>Privacy Policy</strong>.</p>
+      </div>
+    </ion-row>-->
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <div class="footer-text">
+    <p>
+      Durch eine Registierung stimmten Sie unseren
+      <strong (click)="agbModal('AGB')"
+        >Allgemeinen Geschäftsbedingungen</strong
+      >
+      und unserer
+      <strong (click)="agbModal('DS')">Datenschutzerklärung </strong>zu.
+    </p>
+    <!-- <p>By clicking "Next" you agree to our <strong>Terms of Use</strong> and <strong>Privacy Policy</strong>.</p> -->
+  </div>
+</ion-footer>

@@ -1,0 +1,1502 @@
+[
+  {
+    "name": "Afghanistan",
+    "nativeName": "افغانستان",
+    "code": "93",
+    "alphaCode": "af"
+  },
+  {
+    "name": "Åland Islands",
+    "nativeName": "Åland",
+    "code": "358",
+    "alphaCode": "ax"
+  },
+  {
+    "name": "Albania",
+    "nativeName": "Shqipëria",
+    "code": "355",
+    "alphaCode": "al"
+  },
+  {
+    "name": "Algeria",
+    "nativeName": "الجزائر",
+    "code": "213",
+    "alphaCode": "dz"
+  },
+  {
+    "name": "American Samoa",
+    "nativeName": "American Samoa",
+    "code": "1684",
+    "alphaCode": "as"
+  },
+  {
+    "name": "Andorra",
+    "nativeName": "Andorra",
+    "code": "376",
+    "alphaCode": "ad"
+  },
+  {
+    "name": "Angola",
+    "nativeName": "Angola",
+    "code": "244",
+    "alphaCode": "ao"
+  },
+  {
+    "name": "Anguilla",
+    "nativeName": "Anguilla",
+    "code": "1264",
+    "alphaCode": "ai"
+  },
+  {
+    "name": "Antarctica",
+    "nativeName": "Antarctica",
+    "code": "672",
+    "alphaCode": "aq"
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "nativeName": "Antigua and Barbuda",
+    "code": "1268",
+    "alphaCode": "ag"
+  },
+  {
+    "name": "Argentina",
+    "nativeName": "Argentina",
+    "code": "54",
+    "alphaCode": "ar"
+  },
+  {
+    "name": "Armenia",
+    "nativeName": "Հայաստան",
+    "code": "374",
+    "alphaCode": "am"
+  },
+  {
+    "name": "Aruba",
+    "nativeName": "Aruba",
+    "code": "297",
+    "alphaCode": "aw"
+  },
+  {
+    "name": "Australia",
+    "nativeName": "Australia",
+    "code": "61",
+    "alphaCode": "au"
+  },
+  {
+    "name": "Austria",
+    "nativeName": "Österreich",
+    "code": "43",
+    "alphaCode": "at"
+  },
+  {
+    "name": "Azerbaijan",
+    "nativeName": "Azərbaycan",
+    "code": "994",
+    "alphaCode": "az"
+  },
+  {
+    "name": "Bahamas",
+    "nativeName": "Bahamas",
+    "code": "1242",
+    "alphaCode": "bs"
+  },
+  {
+    "name": "Bahrain",
+    "nativeName": "‏البحرين",
+    "code": "973",
+    "alphaCode": "bh"
+  },
+  {
+    "name": "Bangladesh",
+    "nativeName": "Bangladesh",
+    "code": "880",
+    "alphaCode": "bd"
+  },
+  {
+    "name": "Barbados",
+    "nativeName": "Barbados",
+    "code": "1246",
+    "alphaCode": "bb"
+  },
+  {
+    "name": "Belarus",
+    "nativeName": "Белару́сь",
+    "code": "375",
+    "alphaCode": "by"
+  },
+  {
+    "name": "Belgium",
+    "nativeName": "België",
+    "code": "32",
+    "alphaCode": "be"
+  },
+  {
+    "name": "Belize",
+    "nativeName": "Belize",
+    "code": "501",
+    "alphaCode": "bz"
+  },
+  {
+    "name": "Benin",
+    "nativeName": "Bénin",
+    "code": "229",
+    "alphaCode": "bj"
+  },
+  {
+    "name": "Bermuda",
+    "nativeName": "Bermuda",
+    "code": "1441",
+    "alphaCode": "bm"
+  },
+  {
+    "name": "Bhutan",
+    "nativeName": "ʼbrug-yul",
+    "code": "975",
+    "alphaCode": "bt"
+  },
+  {
+    "name": "Bolivia (Plurinational State of)",
+    "nativeName": "Bolivia",
+    "code": "591",
+    "alphaCode": "bo"
+  },
+  {
+    "name": "Bonaire, Sint Eustatius and Saba",
+    "nativeName": "Bonaire",
+    "code": "5997",
+    "alphaCode": "bq"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "nativeName": "Bosna i Hercegovina",
+    "code": "387",
+    "alphaCode": "ba"
+  },
+  {
+    "name": "Botswana",
+    "nativeName": "Botswana",
+    "code": "267",
+    "alphaCode": "bw"
+  },
+  {
+    "name": "Bouvet Island",
+    "nativeName": "Bouvetøya",
+    "code": "",
+    "alphaCode": "bv"
+  },
+  {
+    "name": "Brazil",
+    "nativeName": "Brasil",
+    "code": "55",
+    "alphaCode": "br"
+  },
+  {
+    "name": "British Indian Ocean Territory",
+    "nativeName": "British Indian Ocean Territory",
+    "code": "246",
+    "alphaCode": "io"
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "nativeName": "United States Minor Outlying Islands",
+    "code": "",
+    "alphaCode": "um"
+  },
+  {
+    "name": "Virgin Islands (British)",
+    "nativeName": "British Virgin Islands",
+    "code": "1284",
+    "alphaCode": "vg"
+  },
+  {
+    "name": "Virgin Islands (U.S.)",
+    "nativeName": "Virgin Islands of the United States",
+    "code": "1 340",
+    "alphaCode": "vi"
+  },
+  {
+    "name": "Brunei Darussalam",
+    "nativeName": "Negara Brunei Darussalam",
+    "code": "673",
+    "alphaCode": "bn"
+  },
+  {
+    "name": "Bulgaria",
+    "nativeName": "България",
+    "code": "359",
+    "alphaCode": "bg"
+  },
+  {
+    "name": "Burkina Faso",
+    "nativeName": "Burkina Faso",
+    "code": "226",
+    "alphaCode": "bf"
+  },
+  {
+    "name": "Burundi",
+    "nativeName": "Burundi",
+    "code": "257",
+    "alphaCode": "bi"
+  },
+  {
+    "name": "Cambodia",
+    "nativeName": "Kâmpŭchéa",
+    "code": "855",
+    "alphaCode": "kh"
+  },
+  {
+    "name": "Cameroon",
+    "nativeName": "Cameroon",
+    "code": "237",
+    "alphaCode": "cm"
+  },
+  {
+    "name": "Canada",
+    "nativeName": "Canada",
+    "code": "1",
+    "alphaCode": "ca"
+  },
+  {
+    "name": "Cabo Verde",
+    "nativeName": "Cabo Verde",
+    "code": "238",
+    "alphaCode": "cv"
+  },
+  {
+    "name": "Cayman Islands",
+    "nativeName": "Cayman Islands",
+    "code": "1345",
+    "alphaCode": "ky"
+  },
+  {
+    "name": "Central African Republic",
+    "nativeName": "Ködörösêse tî Bêafrîka",
+    "code": "236",
+    "alphaCode": "cf"
+  },
+  {
+    "name": "Chad",
+    "nativeName": "Tchad",
+    "code": "235",
+    "alphaCode": "td"
+  },
+  {
+    "name": "Chile",
+    "nativeName": "Chile",
+    "code": "56",
+    "alphaCode": "cl"
+  },
+  {
+    "name": "China",
+    "nativeName": "中国",
+    "code": "86",
+    "alphaCode": "cn"
+  },
+  {
+    "name": "Christmas Island",
+    "nativeName": "Christmas Island",
+    "code": "61",
+    "alphaCode": "cx"
+  },
+  {
+    "name": "Cocos (Keeling) Islands",
+    "nativeName": "Cocos (Keeling) Islands",
+    "code": "61",
+    "alphaCode": "cc"
+  },
+  {
+    "name": "Colombia",
+    "nativeName": "Colombia",
+    "code": "57",
+    "alphaCode": "co"
+  },
+  {
+    "name": "Comoros",
+    "nativeName": "Komori",
+    "code": "269",
+    "alphaCode": "km"
+  },
+  {
+    "name": "Congo",
+    "nativeName": "République du Congo",
+    "code": "242",
+    "alphaCode": "cg"
+  },
+  {
+    "name": "Congo (Democratic Republic of the)",
+    "nativeName": "République démocratique du Congo",
+    "code": "243",
+    "alphaCode": "cd"
+  },
+  {
+    "name": "Cook Islands",
+    "nativeName": "Cook Islands",
+    "code": "682",
+    "alphaCode": "ck"
+  },
+  {
+    "name": "Costa Rica",
+    "nativeName": "Costa Rica",
+    "code": "506",
+    "alphaCode": "cr"
+  },
+  {
+    "name": "Croatia",
+    "nativeName": "Hrvatska",
+    "code": "385",
+    "alphaCode": "hr"
+  },
+  {
+    "name": "Cuba",
+    "nativeName": "Cuba",
+    "code": "53",
+    "alphaCode": "cu"
+  },
+  {
+    "name": "Curaçao",
+    "nativeName": "Curaçao",
+    "code": "599",
+    "alphaCode": "cw"
+  },
+  {
+    "name": "Cyprus",
+    "nativeName": "Κύπρος",
+    "code": "357",
+    "alphaCode": "cy"
+  },
+  {
+    "name": "Czech Republic",
+    "nativeName": "Česká republika",
+    "code": "420",
+    "alphaCode": "cz"
+  },
+  {
+    "name": "Denmark",
+    "nativeName": "Danmark",
+    "code": "45",
+    "alphaCode": "dk"
+  },
+  {
+    "name": "Djibouti",
+    "nativeName": "Djibouti",
+    "code": "253",
+    "alphaCode": "dj"
+  },
+  {
+    "name": "Dominica",
+    "nativeName": "Dominica",
+    "code": "1767",
+    "alphaCode": "dm"
+  },
+  {
+    "name": "Dominican Republic",
+    "nativeName": "República Dominicana",
+    "code": "1809",
+    "alphaCode": "do"
+  },
+  {
+    "name": "Ecuador",
+    "nativeName": "Ecuador",
+    "code": "593",
+    "alphaCode": "ec"
+  },
+  {
+    "name": "Egypt",
+    "nativeName": "مصر‎",
+    "code": "20",
+    "alphaCode": "eg"
+  },
+  {
+    "name": "El Salvador",
+    "nativeName": "El Salvador",
+    "code": "503",
+    "alphaCode": "sv"
+  },
+  {
+    "name": "Equatorial Guinea",
+    "nativeName": "Guinea Ecuatorial",
+    "code": "240",
+    "alphaCode": "gq"
+  },
+  {
+    "name": "Eritrea",
+    "nativeName": "ኤርትራ",
+    "code": "291",
+    "alphaCode": "er"
+  },
+  {
+    "name": "Estonia",
+    "nativeName": "Eesti",
+    "code": "372",
+    "alphaCode": "ee"
+  },
+  {
+    "name": "Ethiopia",
+    "nativeName": "ኢትዮጵያ",
+    "code": "251",
+    "alphaCode": "et"
+  },
+  {
+    "name": "Falkland Islands (Malvinas)",
+    "nativeName": "Falkland Islands",
+    "code": "500",
+    "alphaCode": "fk"
+  },
+  {
+    "name": "Faroe Islands",
+    "nativeName": "Føroyar",
+    "code": "298",
+    "alphaCode": "fo"
+  },
+  {
+    "name": "Fiji",
+    "nativeName": "Fiji",
+    "code": "679",
+    "alphaCode": "fj"
+  },
+  {
+    "name": "Finland",
+    "nativeName": "Suomi",
+    "code": "358",
+    "alphaCode": "fi"
+  },
+  {
+    "name": "France",
+    "nativeName": "France",
+    "code": "33",
+    "alphaCode": "fr"
+  },
+  {
+    "name": "French Guiana",
+    "nativeName": "Guyane française",
+    "code": "594",
+    "alphaCode": "gf"
+  },
+  {
+    "name": "French Polynesia",
+    "nativeName": "Polynésie française",
+    "code": "689",
+    "alphaCode": "pf"
+  },
+  {
+    "name": "French Southern Territories",
+    "nativeName": "Territoire des Terres australes et antarctiques françaises",
+    "code": "",
+    "alphaCode": "tf"
+  },
+  {
+    "name": "Gabon",
+    "nativeName": "Gabon",
+    "code": "241",
+    "alphaCode": "ga"
+  },
+  {
+    "name": "Gambia",
+    "nativeName": "Gambia",
+    "code": "220",
+    "alphaCode": "gm"
+  },
+  {
+    "name": "Georgia",
+    "nativeName": "საქართველო",
+    "code": "995",
+    "alphaCode": "ge"
+  },
+  {
+    "name": "Germany",
+    "nativeName": "Deutschland",
+    "code": "49",
+    "alphaCode": "de"
+  },
+  {
+    "name": "Ghana",
+    "nativeName": "Ghana",
+    "code": "233",
+    "alphaCode": "gh"
+  },
+  {
+    "name": "Gibraltar",
+    "nativeName": "Gibraltar",
+    "code": "350",
+    "alphaCode": "gi"
+  },
+  {
+    "name": "Greece",
+    "nativeName": "Ελλάδα",
+    "code": "30",
+    "alphaCode": "gr"
+  },
+  {
+    "name": "Greenland",
+    "nativeName": "Kalaallit Nunaat",
+    "code": "299",
+    "alphaCode": "gl"
+  },
+  {
+    "name": "Grenada",
+    "nativeName": "Grenada",
+    "code": "1473",
+    "alphaCode": "gd"
+  },
+  {
+    "name": "Guadeloupe",
+    "nativeName": "Guadeloupe",
+    "code": "590",
+    "alphaCode": "gp"
+  },
+  {
+    "name": "Guam",
+    "nativeName": "Guam",
+    "code": "1671",
+    "alphaCode": "gu"
+  },
+  {
+    "name": "Guatemala",
+    "nativeName": "Guatemala",
+    "code": "502",
+    "alphaCode": "gt"
+  },
+  {
+    "name": "Guernsey",
+    "nativeName": "Guernsey",
+    "code": "44",
+    "alphaCode": "gg"
+  },
+  {
+    "name": "Guinea",
+    "nativeName": "Guinée",
+    "code": "224",
+    "alphaCode": "gn"
+  },
+  {
+    "name": "Guinea-Bissau",
+    "nativeName": "Guiné-Bissau",
+    "code": "245",
+    "alphaCode": "gw"
+  },
+  {
+    "name": "Guyana",
+    "nativeName": "Guyana",
+    "code": "592",
+    "alphaCode": "gy"
+  },
+  {
+    "name": "Haiti",
+    "nativeName": "Haïti",
+    "code": "509",
+    "alphaCode": "ht"
+  },
+  {
+    "name": "Heard Island and McDonald Islands",
+    "nativeName": "Heard Island and McDonald Islands",
+    "code": "",
+    "alphaCode": "hm"
+  },
+  {
+    "name": "Holy See",
+    "nativeName": "Sancta Sedes",
+    "code": "379",
+    "alphaCode": "va"
+  },
+  {
+    "name": "Honduras",
+    "nativeName": "Honduras",
+    "code": "504",
+    "alphaCode": "hn"
+  },
+  {
+    "name": "Hong Kong",
+    "nativeName": "香港",
+    "code": "852",
+    "alphaCode": "hk"
+  },
+  {
+    "name": "Hungary",
+    "nativeName": "Magyarország",
+    "code": "36",
+    "alphaCode": "hu"
+  },
+  {
+    "name": "Iceland",
+    "nativeName": "Ísland",
+    "code": "354",
+    "alphaCode": "is"
+  },
+  {
+    "name": "India",
+    "nativeName": "भारत",
+    "code": "91",
+    "alphaCode": "in"
+  },
+  {
+    "name": "Indonesia",
+    "nativeName": "Indonesia",
+    "code": "62",
+    "alphaCode": "id"
+  },
+  {
+    "name": "Côte d'Ivoire",
+    "nativeName": "Côte d'Ivoire",
+    "code": "225",
+    "alphaCode": "ci"
+  },
+  {
+    "name": "Iran (Islamic Republic of)",
+    "nativeName": "ایران",
+    "code": "98",
+    "alphaCode": "ir"
+  },
+  {
+    "name": "Iraq",
+    "nativeName": "العراق",
+    "code": "964",
+    "alphaCode": "iq"
+  },
+  {
+    "name": "Ireland",
+    "nativeName": "Éire",
+    "code": "353",
+    "alphaCode": "ie"
+  },
+  {
+    "name": "Isle of Man",
+    "nativeName": "Isle of Man",
+    "code": "44",
+    "alphaCode": "im"
+  },
+  {
+    "name": "Israel",
+    "nativeName": "יִשְׂרָאֵל",
+    "code": "972",
+    "alphaCode": "il"
+  },
+  {
+    "name": "Italy",
+    "nativeName": "Italia",
+    "code": "39",
+    "alphaCode": "it"
+  },
+  {
+    "name": "Jamaica",
+    "nativeName": "Jamaica",
+    "code": "1876",
+    "alphaCode": "jm"
+  },
+  {
+    "name": "Japan",
+    "nativeName": "日本",
+    "code": "81",
+    "alphaCode": "jp"
+  },
+  {
+    "name": "Jersey",
+    "nativeName": "Jersey",
+    "code": "44",
+    "alphaCode": "je"
+  },
+  {
+    "name": "Jordan",
+    "nativeName": "الأردن",
+    "code": "962",
+    "alphaCode": "jo"
+  },
+  {
+    "name": "Kazakhstan",
+    "nativeName": "Қазақстан",
+    "code": "76",
+    "alphaCode": "kz"
+  },
+  {
+    "name": "Kenya",
+    "nativeName": "Kenya",
+    "code": "254",
+    "alphaCode": "ke"
+  },
+  {
+    "name": "Kiribati",
+    "nativeName": "Kiribati",
+    "code": "686",
+    "alphaCode": "ki"
+  },
+  {
+    "name": "Kuwait",
+    "nativeName": "الكويت",
+    "code": "965",
+    "alphaCode": "kw"
+  },
+  {
+    "name": "Kyrgyzstan",
+    "nativeName": "Кыргызстан",
+    "code": "996",
+    "alphaCode": "kg"
+  },
+  {
+    "name": "Lao People's Democratic Republic",
+    "nativeName": "ສປປລາວ",
+    "code": "856",
+    "alphaCode": "la"
+  },
+  {
+    "name": "Latvia",
+    "nativeName": "Latvija",
+    "code": "371",
+    "alphaCode": "lv"
+  },
+  {
+    "name": "Lebanon",
+    "nativeName": "لبنان",
+    "code": "961",
+    "alphaCode": "lb"
+  },
+  {
+    "name": "Lesotho",
+    "nativeName": "Lesotho",
+    "code": "266",
+    "alphaCode": "ls"
+  },
+  {
+    "name": "Liberia",
+    "nativeName": "Liberia",
+    "code": "231",
+    "alphaCode": "lr"
+  },
+  {
+    "name": "Libya",
+    "nativeName": "‏ليبيا",
+    "code": "218",
+    "alphaCode": "ly"
+  },
+  {
+    "name": "Liechtenstein",
+    "nativeName": "Liechtenstein",
+    "code": "423",
+    "alphaCode": "li"
+  },
+  {
+    "name": "Lithuania",
+    "nativeName": "Lietuva",
+    "code": "370",
+    "alphaCode": "lt"
+  },
+  {
+    "name": "Luxembourg",
+    "nativeName": "Luxembourg",
+    "code": "352",
+    "alphaCode": "lu"
+  },
+  {
+    "name": "Macao",
+    "nativeName": "澳門",
+    "code": "853",
+    "alphaCode": "mo"
+  },
+  {
+    "name": "Macedonia (the former Yugoslav Republic of)",
+    "nativeName": "Македонија",
+    "code": "389",
+    "alphaCode": "mk"
+  },
+  {
+    "name": "Madagascar",
+    "nativeName": "Madagasikara",
+    "code": "261",
+    "alphaCode": "mg"
+  },
+  {
+    "name": "Malawi",
+    "nativeName": "Malawi",
+    "code": "265",
+    "alphaCode": "mw"
+  },
+  {
+    "name": "Malaysia",
+    "nativeName": "Malaysia",
+    "code": "60",
+    "alphaCode": "my"
+  },
+  {
+    "name": "Maldives",
+    "nativeName": "Maldives",
+    "code": "960",
+    "alphaCode": "mv"
+  },
+  {
+    "name": "Mali",
+    "nativeName": "Mali",
+    "code": "223",
+    "alphaCode": "ml"
+  },
+  {
+    "name": "Malta",
+    "nativeName": "Malta",
+    "code": "356",
+    "alphaCode": "mt"
+  },
+  {
+    "name": "Marshall Islands",
+    "nativeName": "M̧ajeļ",
+    "code": "692",
+    "alphaCode": "mh"
+  },
+  {
+    "name": "Martinique",
+    "nativeName": "Martinique",
+    "code": "596",
+    "alphaCode": "mq"
+  },
+  {
+    "name": "Mauritania",
+    "nativeName": "موريتانيا",
+    "code": "222",
+    "alphaCode": "mr"
+  },
+  {
+    "name": "Mauritius",
+    "nativeName": "Maurice",
+    "code": "230",
+    "alphaCode": "mu"
+  },
+  {
+    "name": "Mayotte",
+    "nativeName": "Mayotte",
+    "code": "262",
+    "alphaCode": "yt"
+  },
+  {
+    "name": "Mexico",
+    "nativeName": "México",
+    "code": "52",
+    "alphaCode": "mx"
+  },
+  {
+    "name": "Micronesia (Federated States of)",
+    "nativeName": "Micronesia",
+    "code": "691",
+    "alphaCode": "fm"
+  },
+  {
+    "name": "Moldova (Republic of)",
+    "nativeName": "Moldova",
+    "code": "373",
+    "alphaCode": "md"
+  },
+  {
+    "name": "Monaco",
+    "nativeName": "Monaco",
+    "code": "377",
+    "alphaCode": "mc"
+  },
+  {
+    "name": "Mongolia",
+    "nativeName": "Монгол улс",
+    "code": "976",
+    "alphaCode": "mn"
+  },
+  {
+    "name": "Montenegro",
+    "nativeName": "Црна Гора",
+    "code": "382",
+    "alphaCode": "me"
+  },
+  {
+    "name": "Montserrat",
+    "nativeName": "Montserrat",
+    "code": "1664",
+    "alphaCode": "ms"
+  },
+  {
+    "name": "Morocco",
+    "nativeName": "المغرب",
+    "code": "212",
+    "alphaCode": "ma"
+  },
+  {
+    "name": "Mozambique",
+    "nativeName": "Moçambique",
+    "code": "258",
+    "alphaCode": "mz"
+  },
+  {
+    "name": "Myanmar",
+    "nativeName": "Myanma",
+    "code": "95",
+    "alphaCode": "mm"
+  },
+  {
+    "name": "Namibia",
+    "nativeName": "Namibia",
+    "code": "264",
+    "alphaCode": "na"
+  },
+  {
+    "name": "Nauru",
+    "nativeName": "Nauru",
+    "code": "674",
+    "alphaCode": "nr"
+  },
+  {
+    "name": "Nepal",
+    "nativeName": "नेपाल",
+    "code": "977",
+    "alphaCode": "np"
+  },
+  {
+    "name": "Netherlands",
+    "nativeName": "Nederland",
+    "code": "31",
+    "alphaCode": "nl"
+  },
+  {
+    "name": "New Caledonia",
+    "nativeName": "Nouvelle-Calédonie",
+    "code": "687",
+    "alphaCode": "nc"
+  },
+  {
+    "name": "New Zealand",
+    "nativeName": "New Zealand",
+    "code": "64",
+    "alphaCode": "nz"
+  },
+  {
+    "name": "Nicaragua",
+    "nativeName": "Nicaragua",
+    "code": "505",
+    "alphaCode": "ni"
+  },
+  {
+    "name": "Niger",
+    "nativeName": "Niger",
+    "code": "227",
+    "alphaCode": "ne"
+  },
+  {
+    "name": "Nigeria",
+    "nativeName": "Nigeria",
+    "code": "234",
+    "alphaCode": "ng"
+  },
+  {
+    "name": "Niue",
+    "nativeName": "Niuē",
+    "code": "683",
+    "alphaCode": "nu"
+  },
+  {
+    "name": "Norfolk Island",
+    "nativeName": "Norfolk Island",
+    "code": "672",
+    "alphaCode": "nf"
+  },
+  {
+    "name": "Korea (Democratic People's Republic of)",
+    "nativeName": "조선민주주의인민공화국",
+    "code": "850",
+    "alphaCode": "kp"
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "nativeName": "Northern Mariana Islands",
+    "code": "1670",
+    "alphaCode": "mp"
+  },
+  {
+    "name": "Norway",
+    "nativeName": "Norge",
+    "code": "47",
+    "alphaCode": "no"
+  },
+  {
+    "name": "Oman",
+    "nativeName": "عمان",
+    "code": "968",
+    "alphaCode": "om"
+  },
+  {
+    "name": "Pakistan",
+    "nativeName": "Pakistan",
+    "code": "92",
+    "alphaCode": "pk"
+  },
+  {
+    "name": "Palau",
+    "nativeName": "Palau",
+    "code": "680",
+    "alphaCode": "pw"
+  },
+  {
+    "name": "Palestine, State of",
+    "nativeName": "فلسطين",
+    "code": "970",
+    "alphaCode": "ps"
+  },
+  {
+    "name": "Panama",
+    "nativeName": "Panamá",
+    "code": "507",
+    "alphaCode": "pa"
+  },
+  {
+    "name": "Papua New Guinea",
+    "nativeName": "Papua Niugini",
+    "code": "675",
+    "alphaCode": "pg"
+  },
+  {
+    "name": "Paraguay",
+    "nativeName": "Paraguay",
+    "code": "595",
+    "alphaCode": "py"
+  },
+  {
+    "name": "Peru",
+    "nativeName": "Perú",
+    "code": "51",
+    "alphaCode": "pe"
+  },
+  {
+    "name": "Philippines",
+    "nativeName": "Pilipinas",
+    "code": "63",
+    "alphaCode": "ph"
+  },
+  {
+    "name": "Pitcairn",
+    "nativeName": "Pitcairn Islands",
+    "code": "64",
+    "alphaCode": "pn"
+  },
+  {
+    "name": "Poland",
+    "nativeName": "Polska",
+    "code": "48",
+    "alphaCode": "pl"
+  },
+  {
+    "name": "Portugal",
+    "nativeName": "Portugal",
+    "code": "351",
+    "alphaCode": "pt"
+  },
+  {
+    "name": "Puerto Rico",
+    "nativeName": "Puerto Rico",
+    "code": "1787",
+    "alphaCode": "pr"
+  },
+  {
+    "name": "Qatar",
+    "nativeName": "قطر",
+    "code": "974",
+    "alphaCode": "qa"
+  },
+  {
+    "name": "Republic of Kosovo",
+    "nativeName": "Republika e Kosovës",
+    "code": "383",
+    "alphaCode": "xk"
+  },
+  {
+    "name": "Réunion",
+    "nativeName": "La Réunion",
+    "code": "262",
+    "alphaCode": "re"
+  },
+  {
+    "name": "Romania",
+    "nativeName": "România",
+    "code": "40",
+    "alphaCode": "ro"
+  },
+  {
+    "name": "Russian Federation",
+    "nativeName": "Россия",
+    "code": "7",
+    "alphaCode": "ru"
+  },
+  {
+    "name": "Rwanda",
+    "nativeName": "Rwanda",
+    "code": "250",
+    "alphaCode": "rw"
+  },
+  {
+    "name": "Saint Barthélemy",
+    "nativeName": "Saint-Barthélemy",
+    "code": "590",
+    "alphaCode": "bl"
+  },
+  {
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "nativeName": "Saint Helena",
+    "code": "290",
+    "alphaCode": "sh"
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "nativeName": "Saint Kitts and Nevis",
+    "code": "1869",
+    "alphaCode": "kn"
+  },
+  {
+    "name": "Saint Lucia",
+    "nativeName": "Saint Lucia",
+    "code": "1758",
+    "alphaCode": "lc"
+  },
+  {
+    "name": "Saint Martin (French part)",
+    "nativeName": "Saint-Martin",
+    "code": "590",
+    "alphaCode": "mf"
+  },
+  {
+    "name": "Saint Pierre and Miquelon",
+    "nativeName": "Saint-Pierre-et-Miquelon",
+    "code": "508",
+    "alphaCode": "pm"
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "nativeName": "Saint Vincent and the Grenadines",
+    "code": "1784",
+    "alphaCode": "vc"
+  },
+  {
+    "name": "Samoa",
+    "nativeName": "Samoa",
+    "code": "685",
+    "alphaCode": "ws"
+  },
+  {
+    "name": "San Marino",
+    "nativeName": "San Marino",
+    "code": "378",
+    "alphaCode": "sm"
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "nativeName": "São Tomé e Príncipe",
+    "code": "239",
+    "alphaCode": "st"
+  },
+  {
+    "name": "Saudi Arabia",
+    "nativeName": "العربية السعودية",
+    "code": "966",
+    "alphaCode": "sa"
+  },
+  {
+    "name": "Senegal",
+    "nativeName": "Sénégal",
+    "code": "221",
+    "alphaCode": "sn"
+  },
+  {
+    "name": "Serbia",
+    "nativeName": "Србија",
+    "code": "381",
+    "alphaCode": "rs"
+  },
+  {
+    "name": "Seychelles",
+    "nativeName": "Seychelles",
+    "code": "248",
+    "alphaCode": "sc"
+  },
+  {
+    "name": "Sierra Leone",
+    "nativeName": "Sierra Leone",
+    "code": "232",
+    "alphaCode": "sl"
+  },
+  {
+    "name": "Singapore",
+    "nativeName": "Singapore",
+    "code": "65",
+    "alphaCode": "sg"
+  },
+  {
+    "name": "Sint Maarten (Dutch part)",
+    "nativeName": "Sint Maarten",
+    "code": "1721",
+    "alphaCode": "sx"
+  },
+  {
+    "name": "Slovakia",
+    "nativeName": "Slovensko",
+    "code": "421",
+    "alphaCode": "sk"
+  },
+  {
+    "name": "Slovenia",
+    "nativeName": "Slovenija",
+    "code": "386",
+    "alphaCode": "si"
+  },
+  {
+    "name": "Solomon Islands",
+    "nativeName": "Solomon Islands",
+    "code": "677",
+    "alphaCode": "sb"
+  },
+  {
+    "name": "Somalia",
+    "nativeName": "Soomaaliya",
+    "code": "252",
+    "alphaCode": "so"
+  },
+  {
+    "name": "South Africa",
+    "nativeName": "South Africa",
+    "code": "27",
+    "alphaCode": "za"
+  },
+  {
+    "name": "South Georgia and the South Sandwich Islands",
+    "nativeName": "South Georgia",
+    "code": "500",
+    "alphaCode": "gs"
+  },
+  {
+    "name": "Korea (Republic of)",
+    "nativeName": "대한민국",
+    "code": "82",
+    "alphaCode": "kr"
+  },
+  {
+    "name": "South Sudan",
+    "nativeName": "South Sudan",
+    "code": "211",
+    "alphaCode": "ss"
+  },
+  {
+    "name": "Spain",
+    "nativeName": "España",
+    "code": "34",
+    "alphaCode": "es"
+  },
+  {
+    "name": "Sri Lanka",
+    "nativeName": "śrī laṃkāva",
+    "code": "94",
+    "alphaCode": "lk"
+  },
+  {
+    "name": "Sudan",
+    "nativeName": "السودان",
+    "code": "249",
+    "alphaCode": "sd"
+  },
+  {
+    "name": "Suriname",
+    "nativeName": "Suriname",
+    "code": "597",
+    "alphaCode": "sr"
+  },
+  {
+    "name": "Svalbard and Jan Mayen",
+    "nativeName": "Svalbard og Jan Mayen",
+    "code": "4779",
+    "alphaCode": "sj"
+  },
+  {
+    "name": "Swaziland",
+    "nativeName": "Swaziland",
+    "code": "268",
+    "alphaCode": "sz"
+  },
+  {
+    "name": "Sweden",
+    "nativeName": "Sverige",
+    "code": "46",
+    "alphaCode": "se"
+  },
+  {
+    "name": "Switzerland",
+    "nativeName": "Schweiz",
+    "code": "41",
+    "alphaCode": "ch"
+  },
+  {
+    "name": "Syrian Arab Republic",
+    "nativeName": "سوريا",
+    "code": "963",
+    "alphaCode": "sy"
+  },
+  {
+    "name": "Taiwan",
+    "nativeName": "臺灣",
+    "code": "886",
+    "alphaCode": "tw"
+  },
+  {
+    "name": "Tajikistan",
+    "nativeName": "Тоҷикистон",
+    "code": "992",
+    "alphaCode": "tj"
+  },
+  {
+    "name": "Tanzania, United Republic of",
+    "nativeName": "Tanzania",
+    "code": "255",
+    "alphaCode": "tz"
+  },
+  {
+    "name": "Thailand",
+    "nativeName": "ประเทศไทย",
+    "code": "66",
+    "alphaCode": "th"
+  },
+  {
+    "name": "Timor-Leste",
+    "nativeName": "Timor-Leste",
+    "code": "670",
+    "alphaCode": "tl"
+  },
+  {
+    "name": "Togo",
+    "nativeName": "Togo",
+    "code": "228",
+    "alphaCode": "tg"
+  },
+  {
+    "name": "Tokelau",
+    "nativeName": "Tokelau",
+    "code": "690",
+    "alphaCode": "tk"
+  },
+  {
+    "name": "Tonga",
+    "nativeName": "Tonga",
+    "code": "676",
+    "alphaCode": "to"
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "nativeName": "Trinidad and Tobago",
+    "code": "1868",
+    "alphaCode": "tt"
+  },
+  {
+    "name": "Tunisia",
+    "nativeName": "تونس",
+    "code": "216",
+    "alphaCode": "tn"
+  },
+  {
+    "name": "Turkey",
+    "nativeName": "Türkiye",
+    "code": "90",
+    "alphaCode": "tr"
+  },
+  {
+    "name": "Turkmenistan",
+    "nativeName": "Türkmenistan",
+    "code": "993",
+    "alphaCode": "tm"
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "nativeName": "Turks and Caicos Islands",
+    "code": "1649",
+    "alphaCode": "tc"
+  },
+  {
+    "name": "Tuvalu",
+    "nativeName": "Tuvalu",
+    "code": "688",
+    "alphaCode": "tv"
+  },
+  {
+    "name": "Uganda",
+    "nativeName": "Uganda",
+    "code": "256",
+    "alphaCode": "ug"
+  },
+  {
+    "name": "Ukraine",
+    "nativeName": "Україна",
+    "code": "380",
+    "alphaCode": "ua"
+  },
+  {
+    "name": "United Arab Emirates",
+    "nativeName": "دولة الإمارات العربية المتحدة",
+    "code": "971",
+    "alphaCode": "ae"
+  },
+  {
+    "name": "United Kingdom of Great Britain and Northern Ireland",
+    "nativeName": "United Kingdom",
+    "code": "44",
+    "alphaCode": "gb"
+  },
+  {
+    "name": "United States of America",
+    "nativeName": "United States",
+    "code": "1",
+    "alphaCode": "us"
+  },
+  {
+    "name": "Uruguay",
+    "nativeName": "Uruguay",
+    "code": "598",
+    "alphaCode": "uy"
+  },
+  {
+    "name": "Uzbekistan",
+    "nativeName": "O‘zbekiston",
+    "code": "998",
+    "alphaCode": "uz"
+  },
+  {
+    "name": "Vanuatu",
+    "nativeName": "Vanuatu",
+    "code": "678",
+    "alphaCode": "vu"
+  },
+  {
+    "name": "Venezuela (Bolivarian Republic of)",
+    "nativeName": "Venezuela",
+    "code": "58",
+    "alphaCode": "ve"
+  },
+  {
+    "name": "Viet Nam",
+    "nativeName": "Việt Nam",
+    "code": "84",
+    "alphaCode": "vn"
+  },
+  {
+    "name": "Wallis and Futuna",
+    "nativeName": "Wallis et Futuna",
+    "code": "681",
+    "alphaCode": "wf"
+  },
+  {
+    "name": "Western Sahara",
+    "nativeName": "الصحراء الغربية",
+    "code": "212",
+    "alphaCode": "eh"
+  },
+  {
+    "name": "Yemen",
+    "nativeName": "اليَمَن",
+    "code": "967",
+    "alphaCode": "ye"
+  },
+  {
+    "name": "Zambia",
+    "nativeName": "Zambia",
+    "code": "260",
+    "alphaCode": "zm"
+  },
+  {
+    "name": "Zimbabwe",
+    "nativeName": "Zimbabwe",
+    "code": "263",
+    "alphaCode": "zw"
+  }
+]

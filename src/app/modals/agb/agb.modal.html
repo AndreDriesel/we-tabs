@@ -1,0 +1,32 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-title>{{ type === 'AGB' ? 'AGB' : 'Datenschutzerklärung' }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ng-container *ngIf="isAGB">
+    <ion-item>
+      <ion-label>
+        <h1>Allgemeine Geschäftsbedingungen</h1>
+        <ion-text color="dark">später steht hier mal was</ion-text>
+      </ion-label>
+    </ion-item>
+  </ng-container>
+
+  <ng-container *ngIf="isDS">
+    <ion-item>
+      <ion-label>
+        <h1>Überschrift DS</h1>
+        <ion-text color="dark">interessiert doch niemanden</ion-text>
+      </ion-label>
+    </ion-item>
+  </ng-container>
+
+</ion-content>
